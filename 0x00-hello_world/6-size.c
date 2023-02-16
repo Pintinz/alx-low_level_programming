@@ -10,10 +10,10 @@ int main(void)
 	long int c;
 	long long int d;
 	float f;
-printf(" Size of a char: %2d byte(s)", sizeof(a));
-printf(" Size of a char: %2d byte(s)", sizeof(b));
-printf(" Size of a char: %2d byte(s)", sizeof(c));
-printf(" Size of a char: %2d byte(s)", sizeof(d));
-printf(" Size of a char: %2d byte(s)", sizeof(f));
+printf(" Size of a char: %2d byte(s)\n", sizeof(a));
+printf(" Size of a char: %2d byte(s)\n", sizeof(b));
+printf(" Size of a char: %2d byte(s)\n", sizeof(c));
+printf(" Size of a char: %2d byte(s)\n", sizeof(d));
+printf(" Size of a char: %2d byte(s)\n", sizeof(f));
 return (0);
 }
