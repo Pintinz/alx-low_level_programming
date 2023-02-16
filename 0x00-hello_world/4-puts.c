@@ -5,8 +5,6 @@
  */
 int main(void)
 {
-char name;
-name = "\"Programming is like building a multilingual puzzle\n";
-puts("%s", name);
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
