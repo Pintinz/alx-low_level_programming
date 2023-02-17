@@ -9,16 +9,13 @@ int main(void)
 char p = 'a';
 while (p <= 'z')
 {
-putchar(p);
 if (p == 'p')
 {
 p = p + 2;
-putchar(p);
 }
 else if (p == 'd')
 {
 p = p + 2;
-putchar(p);
 }
 else
 {
@@ -26,5 +23,6 @@ putchar(p);
 p = p + 1;
 }
 }
+putchar('\n');
 return (0);
 }
