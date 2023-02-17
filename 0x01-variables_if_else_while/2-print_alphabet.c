@@ -13,5 +13,6 @@ int main(void)
 	putchar(m);
 	m = m + 1;
 	}
+	putchar('\n');
 return (0);
 }
