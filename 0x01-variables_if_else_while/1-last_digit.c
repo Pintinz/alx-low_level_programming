@@ -5,7 +5,7 @@
 /**
  *  main - This contains all the code
  *  Return: 0 (successufl)
-/* betty style doc for function main goes there */
+ */
 int main(void)
 {
 int n;
