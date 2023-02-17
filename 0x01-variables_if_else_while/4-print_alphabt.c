@@ -9,13 +9,13 @@ int main(void)
 char p = 'a';
 while (p <= 'z')
 {
-if (p == 'p')
+if (p == 'q')
 {
-p = p + 2;
+p = p + 1;
 }
-else if (p == 'd')
+else if (p == 'e')
 {
-p = p + 2;
+p = p + 1;
 }
 else
 {
