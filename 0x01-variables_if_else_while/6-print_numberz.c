@@ -7,10 +7,10 @@
 int main(void)
 {
 int si = 0;
-while (si < 10)
+while (si <= 9)
 {
-putchar('%d', si);
-si++;
+putchar(si);
+si =  si + 1;
 }
 putchar('\n');
 return (0);
