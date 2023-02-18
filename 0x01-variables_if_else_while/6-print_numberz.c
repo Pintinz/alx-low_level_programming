@@ -6,11 +6,11 @@
  */
 int main(void)
 {
-int single_digit = 0;
-while (single_digit < 10)
+int si = 0;
+while (si < 10)
 {
-putchar(single_digit);
-single_digit++;
+putchar(si);
+si = si + 1;
 }
 putchar('\n');
 return (0);
