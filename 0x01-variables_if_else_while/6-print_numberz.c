@@ -9,8 +9,8 @@ int main(void)
 int si = 0;
 while (si < 10)
 {
-putchar(si);
-si = si + 1;
+putchar('%d', si);
+si++;
 }
 putchar('\n');
 return (0);
