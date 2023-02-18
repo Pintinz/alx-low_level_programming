@@ -7,11 +7,13 @@ int main(void)
 {
 int i, j, k;
 i = 0;
+j = i + 1;
+k = j + 1;
 while (i < 8)
 {
-while (j == i + 1 && j < 9)
+while (j < 9)
 {
-while (k == j + 1 && k < 10)
+while (k < 10)
 putchar(i + '0');
 putchar(j + '0');
 putchar(k + '0');
