@@ -5,26 +5,22 @@
  */
 int main(void)
 {
-int i, j, k;
-i = 0;
-j = i + 1;
-k = j + 1;
-while (i < 8)
+int digit1, digit2, digit3;
+for (digit1 = 0; digit1 < 8; digit1++)
 {
-while (j > i)
+for (digit2 = digit1 + 1; digit2 < 9; digit2++)
 {
-while (k > j)
-putchar(i + '0');
-putchar(j + '0');
-putchar(k + '0');
-if (i != 7 && j != 8 && k != 9)
+for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 {
+putchar((digit1 % 10) + '0');
+putchar((digit2 % 10) + '0');
+putchar((digit3 % 10) + '0');
+if (!(digit1 == 7 && digit2 == 8 && digit3 == 9))
 putchar(',');
-putchar(' ');
+putchar(' ');
 }
 }
-i++;
 }
 putchar('\n');
-return (0);
+return (0);
 }
