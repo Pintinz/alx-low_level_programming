@@ -3,7 +3,7 @@
  * Write a program that prints all possible different combinations of three digits.
  * Numbers must be separated by ,, followed by a space
  * The three digits must be different
- * Return: 0(success)
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -16,7 +16,7 @@ for (k = j + 1; k < 10; k++)
 putchar(i + '0');
 putchar(j + '0');
 putchar(k + '0');
-if (!(i == 7 && j == 8 && k == 9))
+if (!((i == 7) && (j == 8) && (k == 9)))
 {
 putchar(',');
 putchar(' ');
