@@ -7,10 +7,9 @@
 int main(void)
 {
 int si = 0;
-while (si <= 9)
+for (si = 0; si <= 9; si++)
 {
 putchar(si);
-si =  si + 1;
 }
 putchar('\n');
 return (0);
