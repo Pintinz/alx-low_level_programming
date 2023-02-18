@@ -1,8 +1,6 @@
 #include <stdio.h>
 /**
- * Write a program that prints all possible different combinations of three digits.
- * Numbers must be separated by ,, followed by a space
- * The three digits must be different
+ * main - entry point
  * Return: 0 (success)
  */
 int main(void)
@@ -13,9 +11,9 @@ for (i = 0; i < 8; i++)
 for (j = i + 1; j < 9; j++)
 {
 for (k = j + 1; k < 10; k++)
-putchar(i + '0');
-putchar(j + '0');
-putchar(k + '0');
+putchar('0' + i);
+putchar('0' + j);
+putchar('0' + k);
 if (i != 7 || j != 8 || k != 9)
 {
 putchar(',');
