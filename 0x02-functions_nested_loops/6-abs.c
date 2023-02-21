@@ -7,19 +7,9 @@
  */
 int _abs(int c)
 {
-	if (c > 0)
+	if (c < 0)
 	{
-		printf("%d", c);
-	}
-	else if (c == 0)
-	{
-		printf("%d", c);
-	}
-	else if (c < 0)
-	{
-		int b = -1 * c;
-
-		printf("%d", b);
+		n = -n;
 	}
 	return (0);
 }
