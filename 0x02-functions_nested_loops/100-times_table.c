@@ -13,9 +13,9 @@ void print_times_table(int n)
 	{
 		int mult;
 		int prod;
-		int i = 0;
+		int i;
 
-		for (i = 0; i <= n; i++)
+		for (i = 0; i < n; i++)
 		{
 			for (mult = 0; mult <= n; mult++)
 			{
@@ -24,7 +24,7 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 			}
+		_putchar('\n');
 		}
-	_putchar('\n');
 	}
 }
