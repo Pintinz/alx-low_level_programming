@@ -6,24 +6,25 @@
  */
 void print_times_table(int n)
 {
-	int mul;
-	int prod;
-
 	if (n < 0 || n > 15)
 	{
 	}
 	else
 	{
-		for (n = 0; n < 15; n++)
+		int mult;
+		int prod;
+		int i = 0;
+
+		for (i = 0; i <= n; i++)
 		{
-			for (mul = 0; mul <= n; mul++)
+			for (mult = 0; mult <= n; mult++)
 			{
-				prod = mul * n;
+				prod = mult * i;
 				_putchar(prod + '0');
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
-	}
 	_putchar('\n');
+	}
 }
