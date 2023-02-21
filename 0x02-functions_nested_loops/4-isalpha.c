@@ -31,9 +31,13 @@ int _isalpha(int c)
         {
                 return (1);
         }
-	else if (c == 'c')
+	else if (c == 'C')
 	{
 		return (1);
+	}
+	else if (c == 'l')
+        {
+                return (1);
 	}
 	else
 	{
