@@ -12,8 +12,9 @@ int print_last_digit(int c)
 	{
 	_putchar(n + '0');
 	}
-	else
+	else if (c <= -1)
 	{
+	c = -c;
 	_putchar(n + '0');
 	}
 	return (n);
