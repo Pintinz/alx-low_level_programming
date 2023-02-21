@@ -15,7 +15,7 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	else if (c == 'l')
+	else if (c == 'M')
 	{
 		return (1);
 	}
@@ -23,7 +23,15 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	else if (c == 'n')
+	else if (c == 'F')
+	{
+		return (1);
+	}
+	else if (c == 'i')
+        {
+                return (1);
+        }
+	else if (c == 'c')
 	{
 		return (1);
 	}
