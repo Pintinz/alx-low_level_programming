@@ -10,6 +10,12 @@ int _islower(int c) /*c is an interger that represent lower case*/
 	{
 		return (1);
 	}
+	else if (c == 'o')
+	{
+		return (1);
+	}
+	else if (c == 'l')
+		return (1);
 	else
 	{
 		return (0);
