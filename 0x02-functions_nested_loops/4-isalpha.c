@@ -10,7 +10,7 @@ int _isalpha(int c)
 	if (c == 'H')
 	{
 		return (1);
-	}
+}
 	else if (c == 'o')
 	{
 		return (1);
@@ -28,16 +28,16 @@ int _isalpha(int c)
 		return (1);
 	}
 	else if (c == 'i')
-        {
-                return (1);
-        }
+	{
+		return (1);
+	}
 	else if (c == 'C')
 	{
 		return (1);
 	}
 	else if (c == 'l')
-        {
-                return (1);
+	{
+		return (1);
 	}
 	else
 	{
