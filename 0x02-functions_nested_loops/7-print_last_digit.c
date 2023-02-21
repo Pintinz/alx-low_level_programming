@@ -12,7 +12,7 @@ int print_last_digit(int c)
 	{
 	_putchar(n + '0');
 	}
-	else
+	else if (c == -2147483648)
 	{
 	c = -1 * c;
 	n = c % 10;
