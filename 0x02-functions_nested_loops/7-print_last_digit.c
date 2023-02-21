@@ -12,10 +12,8 @@ int print_last_digit(int c)
 	{
 	_putchar(n + '0');
 	}
-	else if (c == -2147483648)
+	else
 	{
-	c = -1 * c;
-	n = c % 10;
 	_putchar(n + '0');
 	}
 	return (n);
