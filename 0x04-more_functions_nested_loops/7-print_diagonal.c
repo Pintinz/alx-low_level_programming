@@ -10,6 +10,7 @@ void print_diagonal(int n)
 {
 	int m;
 	char b = '\\';
+	char a = ' ';
 
 	if (n <= 0)
 	{
@@ -21,100 +22,109 @@ void print_diagonal(int n)
 		{
 			if (m == 1)
 			{
-			_putchar(b);
-			_putchar('\n');
+				_putchar(a);
+				_putchar(b);
+				_putchar('\n');
 			}
-			if (m == 2)
+			else if (m == 2)
 			{
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+				_putchar(b);
+				_putchar('\n');
 			}
 			else if (m == 3)
 			{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+                                _putchar(a);
+                                _putchar(b);
+                                _putchar('\n');
 			}
 			else if (m == 4)
 			{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(b);
+                                _putchar('\n');
 			}
 			else if (m == 5)
 			{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(b);
+                                _putchar('\n');
 			}
 			else if (m == 6)
 			{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(b);
+                                _putchar('\n');
 			}
 			else if (m == 7)
 			{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+				_putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(b);
+                                _putchar('\n');
 			}
 			else if (m == 8)
 			{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+				_putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(b);
+                                _putchar('\n');
 			}
 			else if (m == 9)
 			{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+				_putchar(a);
+				_putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(b);
+                                _putchar('\n');
 			}
 			else if (m == 10)
 			{
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(b);
-                        _putchar('\n');
+				_putchar(a);
+				_putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(a);
+                                _putchar(b);                                                                                         _putchar('\n');
 			}
 		}
-	_putchar('\n');
 	}
+	_putchar('\n');
 }
