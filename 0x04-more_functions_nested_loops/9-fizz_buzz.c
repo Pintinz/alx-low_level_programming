@@ -10,35 +10,28 @@
 
 int main(void)
 {
-	int first_num  = 1;
+	int num;
 
-	while (first_num <= 100)
+	for (num = 1; num <= 100; num++)
 	{
-		if ((first_num % 3 == 0) && (first_num % 5 != 0))
-		{
-			char min[5] = "Fizz";
+		if ((num % 3) == 0 && (num % 5) == 0)
+			printf("FizzBuzz");
 
-			printf("%s ", min);
-		}
-		else if ((first_num % 5 == 0) && (first_num % 3 != 0))
-		{
-			char min2[9] = "Buzz";
+		else if ((num % 3) == 0)
+			printf("Fizz");
 
-			printf("%s ", min2);
-		}
-		else if ((first_num % 3 == 0) && (first_num % 5 == 0))
-		{
-			char min_1[5] = "Fizz";
-			char min_2[5] = "Buzz";
+		else if ((num % 5) == 0)
+			printf("Buzz");
 
-			printf("%s%s ", min_1, min_2);
-		}
 		else
-		{
-			printf("%d ", first_num);
-		}
-		first_num++;
+			printf("%d", num);
+
+		if (num == 100)
+			continue;
+		printf(" ");
 	}
+
 	printf("\n");
+
 	return (0);
 }
