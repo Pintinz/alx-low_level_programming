@@ -8,123 +8,22 @@
 
 void print_diagonal(int n)
 {
-	int m;
-	char b = '\\';
-	char a = ' ';
+	int len, space;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (m = 1; m <= n; m++)
+		for (len = 0; len < n; len++)
 		{
-			if (m == 1)
-			{
-				_putchar(a);
-				_putchar(b);
-				_putchar('\n');
-			}
-			else if (m == 2)
-			{
-				_putchar(a);
-				_putchar(a);
-				_putchar(b);
-				_putchar('\n');
-			}
-			else if (m == 3)
-			{
-				_putchar(a);
-				_putchar(a);
-                                _putchar(a);
-                                _putchar(b);
-                                _putchar('\n');
-			}
-			else if (m == 4)
-			{
-				_putchar(a);
-				_putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(b);
-                                _putchar('\n');
-			}
-			else if (m == 5)
-			{
-				_putchar(a);
-				_putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(b);
-                                _putchar('\n');
-			}
-			else if (m == 6)
-			{
-				_putchar(a);
-				_putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(b);
-                                _putchar('\n');
-			}
-			else if (m == 7)
-			{
-				_putchar(a);
-				_putchar(a);
-				_putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(b);
-                                _putchar('\n');
-			}
-			else if (m == 8)
-			{
-				_putchar(a);
-				_putchar(a);
-				_putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(b);
-                                _putchar('\n');
-			}
-			else if (m == 9)
-			{
-				_putchar(a);
-				_putchar(a);
-				_putchar(a);
-				_putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(b);
-                                _putchar('\n');
-			}
-			else if (m == 10)
-			{
-				_putchar(a);
-				_putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(a);
-                                _putchar(b);                                                                                         _putchar('\n');
-			}
+			for (space = 0; space < len; space++)
+				_putchar(' ');
+			_putchar('\\');
+
+			if (len == n - 1)
+				continue;
+
+			_putchar('\n');
 		}
 	}
+
 	_putchar('\n');
 }
