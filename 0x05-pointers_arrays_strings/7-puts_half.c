@@ -3,7 +3,7 @@
 /**
  * puts_half - a function that prints half of a string,
  * followed by a new line
- * @str
+ * @str: a point to be pointed
  * Return: void
  */
 
@@ -17,7 +17,14 @@ void puts_half(char *str)
 		length_of_the_string++;
 	}
 
-	n = (length_of_the_string) / 2;
+	if (length_of_the_string % 2 == 1)
+	{
+		n = (length_of_the_string - 1) / 2;
+	}
+	else
+	{
+		n = length_of_the_string / 2;
+	}
 
 	while (str[n])
 	{
