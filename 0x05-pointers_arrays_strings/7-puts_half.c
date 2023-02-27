@@ -10,20 +10,21 @@
 void puts_half(char *str)
 {
 	int n;
-	int length_of_the_string = 0;
+	int length = 0;
 
-	while (str[length_of_the_string])
+	while (str[length])
 	{
-		length_of_the_string++;
+		length++;
 	}
 
-	if (length_of_the_string % 2 == 1)
+	if (length % 2 == 1)
 	{
-		n = (length_of_the_string - 1) / 2;
+		n = (length - 1) / 2;
 	}
+
 	else
 	{
-		n = length_of_the_string / 2;
+		n = length / 2;
 	}
 
 	for (; str[n]; n++)
