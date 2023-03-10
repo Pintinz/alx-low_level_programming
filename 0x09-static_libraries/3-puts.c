@@ -2,7 +2,9 @@
 
 void _puts(char *s)
 {
-	int n;
-
-	n = *s;
+	while (*s != '\0')
+	{
+	putchar(*s);
+	s++;
+	}
 }
