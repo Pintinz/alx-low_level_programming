@@ -29,6 +29,7 @@ char *create_array(unsigned int size, char c)
 		str[i] = c;
 		i++;
 	}
+	free(str);
 	if (str == NULL)
 	{
 		return (NULL);
