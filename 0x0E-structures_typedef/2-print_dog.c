@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * print_dog - a function that prints a struct dog
- * @d: a pointer of the dog
+ * print_dog - prints a struct dog
+ * @d: pointer to an element of type dog
  * Return: Nothing
  */
  void print_dog(struct dog *d)
