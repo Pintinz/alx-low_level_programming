@@ -22,14 +22,7 @@
 		{
 			printf("Name: (nil)");
 		}
-		if (d->age == NULL)
-		{
-			printf("Age: (nil)");
-		}
-		else
-		{
-			printf("Age: %.2f\n", d->age);
-		}
+		printf("Age: %f\n", d->age);
 		if (d->owner != NULL)
 		{
 			printf("Owner: %s\n", d->owner);
