@@ -1,6 +1,6 @@
 #include <stdlib.h>
-#ifndef HEADER_FILE
-#define HEADER_FILE dog.h
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - Define a new struct dog with name, age, owner
