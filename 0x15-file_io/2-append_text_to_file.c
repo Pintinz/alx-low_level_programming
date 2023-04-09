@@ -25,7 +25,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	else if (text_content != NULL)
 	{
-		while (text_content[len])
+		while (text_content[length])
 		{
 			length++;
 		}
