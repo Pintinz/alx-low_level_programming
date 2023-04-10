@@ -1,5 +1,4 @@
-#include "main.h"
-#include <stdlib.h>
+#include "holberton.h"
 
 /**
  * binary_to_uint - Converts a binary number to an unsigned int.
@@ -10,25 +9,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i = 0, mult = 1;
-	int length;
+	unsigned int num = 0, mult = 1;
+	int len;
 
-	if (b == NULL)
-	{
+	if (b == '\0')
 		return (0);
-	}
 
-	for (length = 0; b[length];)
-		length++;
+	for (len = 0; b[len];)
+		len++;
 
-	for (length -= 1; length >= 0; length--)
+	for (len -= 1; len >= 0; len--)
 	{
-		if (b[length] != '0' && b[length] != '1')
+		if (b[len] != '0' && b[len] != '1')
 			return (0);
 
-		i += (b[length] - '0') * mult;
+		num += (b[len] - '0') * mult;
 		mult *= 2;
 	}
 
-	return (i);
-}
+	return (num);
+i}
