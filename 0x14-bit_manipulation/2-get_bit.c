@@ -10,7 +10,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	int compare;
+	unsigned int compare;
 
 	compare = sizeof(unsigned long int) * 8;
 
