@@ -12,33 +12,25 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int number = 0, multiply = 1;
 	int length = 0;
 
-	if (b == '\0')
+	if (b != '\0')
 	{
-		return (0);
-	}
-	else
-	{
+
 		while (b[length])
 		{
 			length++;
 		}
 
-		while (len >= 0)
+		for (length -= 1; length >= 0; length--)
 		{
-			if (b[length] != '0')
-			{
-				if (b[length] != '1')
-				{
-					return (0);
-				}
-			}
+			if (b[length] != '0' && b[length] != '1')
+				return (0);
+
+			number += (b[length] - '0') * multiply;
+			multiply *= 2;
 		}
 
-		number += (b[length] - '0') * multiply;
-		multiply *= 2;
-
-		length--;
+		return (number);
 	}
 
-	return (number);
+	return (0);
 }
