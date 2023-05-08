@@ -1,4 +1,4 @@
-i/*
+/*
  * File: 2-append_text_to_file.c
  * Auth: Iguagbonmwen Osaivbie
  */
@@ -17,24 +17,25 @@ i/*
 
 int append_text_to_file(const char *filename, char *text_content)
 {
+	int fd, bytes_written, len = 0;
+
 	if (filename == NULL)
 		return (-1);
 
-	int fd = open(filename, O_WRONLY | O_APPEND);
+	fd = open(filename, O_WRONLY | O_APPEND);
 
 	if (fd == -1)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		size_t len = 0;
 
 		while (text_content[len] != '\0')
 		{
 			len++;
 		}
 
-		ssize_t bytes_written = write(fd, text_content, len);
+		bytes_written = write(fd, text_content, len);
 
 		if (bytes_written == -1)
 		{
