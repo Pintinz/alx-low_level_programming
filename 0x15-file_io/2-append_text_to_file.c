@@ -14,32 +14,34 @@ i/*
  *         If the file does not exist the user lacks write permissions - -1.
  *         Otherwise - 1.
  */
+
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int o_file, w_file, length = 0;
-
 	if (filename == NULL)
-	{
 		return (-1);
-	}
 
-	else if (text_content != NULL)
+	int fd = open(filename, O_WRONLY | O_APPEND);
+
+	if (fd == -1)
+		return (-1);
+
+	if (text_content != NULL)
 	{
-		while (text_content[length])
+		size_t len = 0;
+
+		while (text_content[len] != '\0')
 		{
-			length++;
+			len++;
+		}
+
+		ssize_t bytes_written = write(fd, text_content, len);
+
+		if (bytes_written == -1)
+		{
+			close(fd);
+			return (-1);
 		}
 	}
-
-	o_file = open(filename, O_WRONLY | O_APPEND);
-	w_file = write(o_file, text_content, length);
-
-	if (o_file == -1 || w_file == -1)
-	{
-		return (-1);
-	}
-
-	close(o_file);
-
+	close(fd);
 	return (1);
 }
